@@ -1,0 +1,34 @@
+<html>
+    {% load static %}
+    <!-- Head includes metadata -->
+    <!-- Metadata defines the language used, encoding, etc. -->
+    <head>
+        <!-- Encoding -->
+        <meta charset="utf-8">
+        <!-- View option in cellphone -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Title shown in the browser -->
+        <title>JZ Insta</title>
+        <!-- Page style is defined in css files -->
+        <!-- Link this html file to css files -->
+        <!-- Static point to the STATICFILES_DIRS in settings.py -->
+        <!-- To use static, we must "load static" first -->
+        <!-- <link href="{% static 'css/mystyle.css' %}" rel="stylesheet"> -->
+        <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'vendor/font-awesome-4.6.3/css/font-awesome.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        {% include 'header.html' %}
+
+        <!-- Put it in a container so that there is a costumized margin -->
+        <div class="content-wrapper">
+            <div class="container">
+                <!-- Find the block named content and place it here -->
+                {% block content %}
+                {% endblock content%}
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,11 @@
+/* For <li> in html, use the setting below */
+/* <a> under <li> will be red */ 
+li a {
+    color: red;
+}
+
+/* Set all classes named update-post */ 
+.update-post {
+    color: red;
+    font-size: 40px;
+}
